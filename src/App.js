@@ -207,7 +207,11 @@ function App() {
                       {msg.sender === "user" ? "U" : "AI"}
                     </div>
                     <div className="message-bubble">
-                      <div className="message-text">{msg.text}</div>
+                      <div className="message-text">
+  {msg.text.split('\n').map((line, index) => (
+    <p key={index}>{line}</p>
+  ))}
+</div>
                       <div className="message-time">{msg.time}</div>
                     </div>
                   </div>
