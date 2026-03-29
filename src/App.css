@@ -98,7 +98,7 @@ body {
 }
 
 .conversation-item:hover {
-  background-color: #2a2b32;
+  background-color: #efeff2;
 }
 
 .conversation-item.active {
